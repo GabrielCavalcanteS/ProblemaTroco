@@ -22,10 +22,11 @@ public class CalculoTroco {
 		// Pega uma moeda da lista de moedas.
 		int moeda = moedas.get(0);
 		solucao.push(moeda);
-		// Utiliza recursão, diminuindoo valor do troco pela moeda.
+		// Utiliza recursão, diminuindoo valor do troco pela moeda selecionada para solução.
 		int valor1 = calculaTroco(valorTroco - moeda, moedas, solucao, conjSolucao);
 		solucao.pop();
 		
+		// Nova lista criada para não alterar a lista original de moedas.
 		List<Integer> moedasNovo = new ArrayList<Integer>(moedas);
 		moedasNovo.remove(moeda);
 		int valor2 = calculaTroco(valorTroco, moedasNovo, solucao, conjSolucao);
@@ -35,4 +36,9 @@ public class CalculoTroco {
 	}
 	
 	// TODO Método para mostrar a lista de moedas que foram selecionadas na solução.
+	// TODO Método para mostrar uma mensagem do resultado.
+	static String mensagemResultado(String mostraResultado) {
+		
+		return mostraResultado;
+	}
 }

@@ -11,7 +11,7 @@ public class Principal {
 		// TODO Auto-generated method stub
 		int valorTroco = 4;
 		List<Integer> moedas = new ArrayList<>(Arrays.asList(1,2,3));
-		Stack<Integer> solucao = new Stack();
+		Stack<Integer> solucao = new Stack<Integer>();
 		List<Integer[]> conjSolucao = new ArrayList<Integer[]>();
 		
 		int num = CalculoTroco.calculaTroco(valorTroco, moedas, solucao, conjSolucao);
