@@ -27,5 +27,3 @@ class Principal:
 
     # Mostra as moedas utilizando a programação dinâmica.
     cal.caminho_dinamico(resp_incial, valor_troco)
-
-
